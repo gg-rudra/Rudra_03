@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Teams with Nested Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #f4a6a6;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #fbd5d5;
+        }
+        .nested-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .nested-table th, .nested-table td {
+            border: 1px solid #aaa;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formula 1 Teams</h2>
+
+<table>
+    <tr>
+        <th>Team Name</th>
+        <th>Country</th>
+        <th>Championships Won</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>Mercedes</td>
+        <td>Germany</td>
+        <td>8</td>
+        <td>
+            <table class="nested-table">
+                <tr>
+                    <th>Driver</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Lewis Hamilton</td>
+                    <td>2013 - Present</td>
+                </tr>
+                <tr>
+                    <td>Valtteri Bottas</td>
+                    <td>2017 - 2021</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ferrari</td>
+        <td>Italy</td>
+        <td>16</td>
+        <td>
+            <table class="nested-table">
+                <tr>
+                    <th>Driver</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Charles Leclerc</td>
+                    <td>2019 - Present</td>
+                </tr>
+                <tr>
+                    <td>Carlos Sainz</td>
+                    <td>2021 - Present</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Red Bull Racing</td>
+        <td>Austria</td>
+        <td>5</td>
+        <td>
+            <table class="nested-table">
+                <tr>
+                    <th>Driver</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Max Verstappen</td>
+                    <td>2015 - Present</td>
+                </tr>
+                <tr>
+                    <td>Sergio Pérez</td>
+                    <td>2021 - Present</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
